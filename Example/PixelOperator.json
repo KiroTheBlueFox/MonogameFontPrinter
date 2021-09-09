@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Pixel Operator",
+  "Height": 16,
+  "SpaceLength": 4,
+  "TabLength": 16,
+  "MinimumCharacterWidth": 5,
+  "Characters": [
+    "!',./:;<>I\\_`il|¡¦´·¸ÌÍÎÏìíîïı˚‘’‚",
+    "-=ft°–•",
+    "\"$&()*+0123456789?ABCDEFGHJKLNOPQRSTUVXYZ[]^abcdeghjknopqrsuvxyz{}¢¥¨¬±µ¿ÀÁÂÃÄÅÇÈÉÊËÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåçèéêëðñòóôõö÷øùúûüýþÿĈĉČčĎĚěĜĝĤĥĴĵŇňŘřŜŝŠšŤŬŭŮůŸŽžˆˇ˘“”„†‡",
+    "#~£«»˜—",
+    "%@MWmw©®¶…",
+    "ÆæŒœ",
+    "ďť"
+  ],
+  "MissingCharacter": "?"
+}
