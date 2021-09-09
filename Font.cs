@@ -74,9 +74,6 @@ namespace KiroTheBlueFox.Utils
                         case ' ':
                             currentWidth += fontParameters.SpaceLength + fontOptions.CharSpacing;
                             break;
-                        case '\t':
-                            currentWidth += fontParameters.TabLength + fontOptions.CharSpacing;
-                            break;
                         case '\n':
                             currentWidth = 0;
                             currentHeight += fontParameters.Height + fontOptions.LineSpacing;
@@ -110,9 +107,6 @@ namespace KiroTheBlueFox.Utils
                         case ' ':
                             widths[line] += fontParameters.SpaceLength + fontOptions.CharSpacing;
                             break;
-                        case '\t':
-                            widths[line] += fontParameters.TabLength + fontOptions.CharSpacing;
-                            break;
                         case '\n':
                             height += fontParameters.Height + fontOptions.LineSpacing;
                             line++;
@@ -137,7 +131,7 @@ namespace KiroTheBlueFox.Utils
     class FontParameters
     {
         public string Name, MissingCharacter;
-        public int Height, SpaceLength, TabLength, MinimumCharacterWidth;
+        public int Height, SpaceLength, MinimumCharacterWidth;
         public string[] Characters;
     }
 
@@ -179,3 +173,4 @@ namespace KiroTheBlueFox.Utils
             LineSpacing = lineSpacing;
         }
     }
+}
