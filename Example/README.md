@@ -7,7 +7,8 @@ You'll need to create 2 files.
 Both need to have the same name (For example : `PixelOperator.json` and `PixelOperator.png`)  
 ### The JSON file
 The first one is a json file, it contains all the properties of the font you're gonna use.  
-For example : ````json
+For example :
+```json
 {
   "Name": "Pixel Operator",
   "Height": 16,
@@ -23,7 +24,8 @@ For example : ````json
     "ďť"
   ],
   "MissingCharacter": "?"
-}````  
+}
+```  
 `Name` is the name of the font  
 `Height` is the height of the font (in pixels)  
 `SpaceLength` is the length of a space (in pixels)  
@@ -55,23 +57,31 @@ First you'll open your Content.mgcb and import it the 2 files created before.
 Next, you'll change the `Build Action` of the JSON file to `Copy`.  
 
 ### Creating the variable
-In your code, you create a new var of type `Font` : ```cs
-Font yourFont = new Font(Game, FilePath);```
+In your code, you create a new var of type `Font` :
+```cs
+Font yourFont = new Font(Game, FilePath);
+```
 `Game` is your main game's class
 `FilePath` is the path to the files without extension
-Example : ```cs
-Font PixelOperator = new Font(this, "PixelOperator");```
+Example :
+```cs
+Font PixelOperator = new Font(this, "PixelOperator");
+```
 Then, after creating it, you'll have to load it (usually in your load method).
 
 ### Draw a text
 To draw a text, you'll first have to begin your SpriteBatch.  
-Then you'll do ```cs
-yourFont.Draw(SpriteBatch, Text, Position, FontOptions);```  
+Then you'll do
+```cs
+yourFont.Draw(SpriteBatch, Text, Position, FontOptions);
+```  
 `SpriteBatch` is your SpriteBatch  
 `Text` is your string (\n for breaking lines)  
 `Position` is a Vector2 that represents the position in the SpriteBatch  
 And `FontOptions` are the settings of your text : size, color, character spacing and line spacing.  
 
 ### Getting the size of a text 
-You can get the size of a text (Vector2) by using : ```cs
-yourFont.TextSize(Text, FontOptions);```  
+You can get the size of a text (Vector2) by using :
+```cs
+yourFont.TextSize(Text, FontOptions);
+```  
