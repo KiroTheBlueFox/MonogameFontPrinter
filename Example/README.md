@@ -7,7 +7,7 @@ You'll need to create 2 files.
 Both need to have the same name (For example : `PixelOperator.json` and `PixelOperator.png`)  
 ### The JSON file
 The first one is a json file, it contains all the properties of the font you're gonna use.  
-For example : ```json
+For example : ````json
 {
   "Name": "Pixel Operator",
   "Height": 16,
@@ -23,7 +23,7 @@ For example : ```json
     "ďť"
   ],
   "MissingCharacter": "?"
-}```  
+}````  
 `Name` is the name of the font  
 `Height` is the height of the font (in pixels)  
 `SpaceLength` is the length of a space (in pixels)  
